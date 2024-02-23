@@ -40,9 +40,20 @@ Invoices API created using django rest framework
 
 `python manage.py migrate`
 
+> # To run tests
+`./manage.py test invoices.tests.apiTests`
+
 # Now you are ready to run the application 
 >#The final command
 
 `python manage.py runserver`
 
-## search `127.0.0.1:8000` in the browser
+## search `127.0.0.1:8000/api/invoices` in the browser
+it will list out the invoices.
+> To visit the specific customer's invoices 
+> ### search for `127.0.0.1:8000/api/invoices/{customerName}`
+> To visit the invoice details of the specific user
+> ### search for `127.0.0.1:8000/api/invoices/{customerName}/details`
+> To get specific user's specific Invoice detail
+> ### search for `127.0.0.1:8000/api/invoices/{customerName}/details/{description}`
+
