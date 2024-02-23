@@ -13,6 +13,8 @@ class InvoiceViewSet(viewsets.ModelViewSet):
 class InvoiceDetailViewSet(viewsets.ModelViewSet):
     queryset = InvoiceDetail.objects.all()
     serializer_class = InvoiceDetailsSerializer
+    lookup_field = 'description'
+
     
     def get_invoice(self):
         # Get the invoice ID from the URL parameters
