@@ -1,2 +1,2 @@
 # invoicesAPI
-invoices API using drf
+Invoices API created using django rest framework
